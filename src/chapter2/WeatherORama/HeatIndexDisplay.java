@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2.WeatherORama;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
     float heatIndex = 0.0f;

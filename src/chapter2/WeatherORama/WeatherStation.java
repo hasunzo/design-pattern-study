@@ -1,7 +1,4 @@
-package chapter2;
-
-import java.awt.event.ActionListener;
-import java.beans.PropertyChangeListener;
+package chapter2.WeatherORama;
 
 public class WeatherStation {
     public static void main(String[] args) {
