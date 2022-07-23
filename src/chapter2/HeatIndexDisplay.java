@@ -10,7 +10,9 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
+    public void update() {
+        float temp = weatherData.getTemperature();
+        float humidity = weatherData.getHumidity();
         heatIndex = computeHeatIndex(temp, humidity);
         display();
     }
