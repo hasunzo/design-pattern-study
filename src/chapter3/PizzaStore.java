@@ -1,19 +1,17 @@
 package chapter3;
 
 public class PizzaStore {
+
+    SimplePizzaFactory factory;
+
+    public PizzaStore(SimplePizzaFactory factory) {
+        this.factory = factory;
+    }
+
     Pizza orderPizza(String type) {
         Pizza pizza = null;
-        if (type.equals("cheese")) {
-            pizza = new CheesePizza();
-        } else if (type.equals("greek")) {
-            pizza = new GreekPizza();
-        } else if (type.equals("pepperoni")) {
-            pizza = new PepperoniPizza();
-        } else if (type.equals("clam")) {
-            pizza = new ClamPizza();
-        } else if (type.equals("veggie")) {
-            pizza = new VeggiePizza();
-        }
+
+        pizza = factory.createPizza(type);
 
         pizza.prepate();
         pizza.bake();
