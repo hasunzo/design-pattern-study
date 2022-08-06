@@ -1,5 +1,7 @@
 package chapter3;
 
+import chapter3.ingredient.*;
+
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
@@ -8,7 +10,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     @Override
-    public Sause createSauce() {
+    public Sauce createSauce() {
         return new MarinaraSauce();
     }
 
@@ -19,7 +21,7 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Override
     public Veggies[] createVeggies() {
-        Veggies veggies[] = { new Carlic(), new Onion(), new Mushroom(), new RedPepper() };
+        Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };
         return veggies;
     }
 

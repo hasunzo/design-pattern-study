@@ -1,9 +1,11 @@
 package chapter3;
 
+import chapter3.ingredient.*;
+
 public interface PizzaIngredientFactory {
 
     public Dough createDough();
-    public Sause createSauce();
+    public Sauce createSauce();
     public Cheese createCheese();
     public Veggies[] createVeggies();
     public Pepperoni createPepperoni();
