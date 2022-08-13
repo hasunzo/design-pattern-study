@@ -1,17 +1,14 @@
 package chapter5;
 
-public class ChocolateBoiler {
+public enum ChocolateBoiler {
+    UNIQUE_INSTANCE(true, false);
+
     private boolean empty;
     private boolean boiled;
-    private static ChocolateBoiler uniqueInstance = new ChocolateBoiler();
 
-    public static synchronized ChocolateBoiler getInstance() {
-        return uniqueInstance;
-    }
-
-    private ChocolateBoiler() {
-        empty = true;
-        boiled = false;
+    private ChocolateBoiler(boolean empty, boolean boiled) {
+        this.empty = empty;
+        this.boiled = boiled;
     }
 
     public void fill() {
