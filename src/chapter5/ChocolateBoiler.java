@@ -3,12 +3,9 @@ package chapter5;
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
-    private static ChocolateBoiler uniqueInstance;
+    private static ChocolateBoiler uniqueInstance = new ChocolateBoiler();
 
     public static synchronized ChocolateBoiler getInstance() {
-        if (uniqueInstance == null) {
-            uniqueInstance = new ChocolateBoiler();
-        }
         return uniqueInstance;
     }
 
