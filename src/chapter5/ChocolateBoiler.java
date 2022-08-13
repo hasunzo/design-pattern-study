@@ -5,7 +5,7 @@ public class ChocolateBoiler {
     private boolean boiled;
     private static ChocolateBoiler uniqueInstance;
 
-    public static ChocolateBoiler getInstance() {
+    public static synchronized ChocolateBoiler getInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new ChocolateBoiler();
         }
