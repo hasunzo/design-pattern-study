@@ -3,6 +3,14 @@ package chapter5;
 public class ChocolateBoiler {
     private boolean empty;
     private boolean boiled;
+    private static ChocolateBoiler uniqueInstance;
+
+    public static ChocolateBoiler getInstance() {
+        if (uniqueInstance == null) {
+            uniqueInstance = new ChocolateBoiler();
+        }
+        return uniqueInstance;
+    }
 
     private ChocolateBoiler() {
         empty = true;
