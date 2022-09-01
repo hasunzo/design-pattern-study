@@ -1,9 +1,9 @@
 package chapter6;
 
-public class LightCommand implements Command {
+public class LightOnCommand implements Command {
     Light light;
 
-    public LightCommand(Light light) {
+    public LightOnCommand(Light light) {
         this.light = light;
     }
 
