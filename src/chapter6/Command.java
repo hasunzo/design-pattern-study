@@ -5,4 +5,5 @@ package chapter6;
 // 객체 마을 식당의 orderUp()
 public interface Command {
     public void execute();
+    public void undo();
 }
