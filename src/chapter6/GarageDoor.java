@@ -1,6 +1,12 @@
 package chapter6;
 
 public class GarageDoor {
+    String location;
+
+    public GarageDoor(String location) {
+        this.location = location;
+    }
+
     public void up() {
         System.out.println("차고 문이 열렸습니다.");
     }
