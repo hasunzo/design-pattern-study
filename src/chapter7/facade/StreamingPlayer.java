@@ -9,7 +9,7 @@ public class StreamingPlayer {
 
     public void play(String movie) {
         this.movie = movie;
-        System.out.printf("스트리밍 플레이어에서 \"%s\"를 재생합니다.", movie);
+        System.out.printf("스트리밍 플레이어에서 \"%s\"를 재생합니다.\n", movie);
     }
 
     public void off() {

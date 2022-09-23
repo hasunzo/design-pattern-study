@@ -16,7 +16,7 @@ public class Amplifier {
     }
 
     public void setVolume(int i) {
-        System.out.printf("앰프 볼륨을 %d로 설정합니다.", i);
+        System.out.printf("앰프 볼륨을 %d로 설정합니다.\n", i);
     }
 
     public void off() {

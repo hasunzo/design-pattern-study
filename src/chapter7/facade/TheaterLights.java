@@ -2,7 +2,7 @@ package chapter7.facade;
 
 public class TheaterLights {
     public void dim(int i) {
-        System.out.printf("조명 밝기를 %d로 설정합니다", i);
+        System.out.printf("조명 밝기를 %d로 설정합니다.\n", i);
     }
 
     public void on() {
